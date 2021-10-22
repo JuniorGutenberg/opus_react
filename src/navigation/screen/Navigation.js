@@ -2,6 +2,11 @@ import React from 'react';
 import {View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Buscar from '../../buscar/screen/Buscar'
+import Pedidos from '../../pedidos/screen/Pedidos'
+import Enviados from '../../enviados/screen/Enviados'
+import Perfil from '../../perfil/screen/Perfil'
+
+
 import {styles} from '../res/styles/Styles'
 import {Ionicons} from '@expo/vector-icons'; 
 import colors from '../../res/values/colors'
@@ -9,27 +14,6 @@ import colors from '../../res/values/colors'
 
 const Tab = createBottomTabNavigator()
 
-
-
-function Perfil(){
-
-    return<View>
-        
-    </View>
-}
-function Pedidos(){
-
-    return<View>
-        
-    </View>
-}
-
-function Enviados(){
-
-    return<View>
-        
-    </View>
-}
 
 export default function Navigation(){
     return <Tab.Navigator screenOptions={({route}) => (

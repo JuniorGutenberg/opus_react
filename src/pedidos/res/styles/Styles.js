@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         zIndex:5,
         backgroundColor:color.cinza
     },
-    fundo_localizacao:{
+    fundo_search:{
         position:'absolute',
         backgroundColor:color.blur_fundo,
         borderRadius:20,
@@ -34,19 +34,21 @@ const styles = StyleSheet.create({
         alignItems:'center',
         zIndex:5
     },
-    icon_localizacao:{
-        alignSelf:'flex-start',
-        top:10,
-        marginLeft:15
+    icon_search:{
+        position:'absolute',
+        alignSelf:'flex-end',
+        bottom:10,
+        end:15
     },
-    text_localizacao:{
-        fontSize:16,
-        alignSelf:'center',
-        textAlign:'center',
-        maxWidth:'82%',
-        alignContent:'center',
-        bottom:12,
-        marginStart:25
+    text_input_search:{
+        position:'absolute',
+        fontSize:20,
+        color:color.black,
+        width:'80%',
+        top:10,
+        start:15,
+        borderBottomColor:color.black,
+        borderBottomWidth:0.5
     },
     button_add:{
         position:'absolute',
