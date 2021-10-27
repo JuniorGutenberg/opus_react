@@ -4,7 +4,7 @@ import {BuscarView} from '../../buscar/components/views/BuscarView'
 
 export default function Buscar({navigation}){
     
-    return(<BuscarView>
+    return(<BuscarView navigation = {navigation}>
 
         </BuscarView>);
 }

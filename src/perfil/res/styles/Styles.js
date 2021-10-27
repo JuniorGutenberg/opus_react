@@ -28,6 +28,19 @@ const styles = StyleSheet.create({
         alignItems:'center', 
         justifyContent:'center',
     },
+    image_perfil_feedback:{
+        position:'absolute',
+        width:45,
+        height:45,
+        borderRadius:60,
+        top:'10%',
+        alignSelf:'flex-start',
+        elevation:7,
+        start:'5%',
+        zIndex:9,
+        borderWidth:2,
+        borderColor:color.cinza_dark,
+    },
     fundo_curvada:{
         position:'absolute',
         width:"100%",
@@ -37,34 +50,31 @@ const styles = StyleSheet.create({
         zIndex:5,
         backgroundColor:color.cinza
     },
-    button_add:{
+    rating_feedback:{
         position:'absolute',
-        width:60,
-        height:60, 
-        backgroundColor:color.blur_fundo, 
-        alignItems:'center', 
-        justifyContent:'center',
-        borderRadius:30, 
-        right:25,
-        bottom:25, 
-        elevation:7, 
-        zIndex:9
+        top:'32%',
+        start:'20%',
+        backgroundColor:color.cinza_dark
     },
-    icon_localizacao_distancia:{
+    text_nome_feedback:{
         position:'absolute',
         alignSelf:'flex-start',
-        top:125,
-        start:35
-    },
-    text_localizacao_distancia:{
-        position:'absolute',
-        alignSelf:'flex-start',
-        top:130,
-        start:65,
+        top:'15%',
+        start:'20%',
         maxWidth:'82%',
         color:color.white,
-        fontSize:17
+        fontSize:20,
+        fontWeight:'bold'
     },
+    text_desc_feedback:{
+        marginTop:'24%',
+        marginStart:'20%',
+        width:280,
+        marginBottom:10,
+        color:color.white,
+        fontSize:18,
+        fontWeight:'normal'
+        },
     btn_add_float:{
         position:'absolute',
         width:60, 
@@ -79,20 +89,20 @@ const styles = StyleSheet.create({
         zIndex:9
     },
     container_flat:{
-        top:20,
+        top:380,
         start:10,
         end:10
     },
     container_list:{
-        position:'absolute',
         elevation:1.5,
         width:'95%',
-        height:200
+        minHeight:150,
+        flexDirection:'row',
+        flexShrink:1,
+        flexWrap:'wrap'
+
     },
     back_list:{
-        position:'absolute',
-        width:'100%',
-        height:'100%',
         borderRadius:25,
         backgroundColor:color.cinza_dark,
         elevation:5,
@@ -112,7 +122,7 @@ const styles = StyleSheet.create({
         fontSize:25,
         alignSelf:'center',
         maxWidth:'90%',
-        top:235,
+        top:65,
         marginStart:25,
         color:color.white,
         elevation:7,
@@ -124,7 +134,7 @@ const styles = StyleSheet.create({
         fontSize:16,
         alignSelf:'center',
         maxWidth:'90%',
-        top:270,
+        top:100,
         marginStart:25,
         color:color.cinza_light,
         elevation:7,
@@ -136,7 +146,7 @@ const styles = StyleSheet.create({
         fontSize:18,
         alignSelf:'center',
         maxWidth:'90%',
-        top:300,
+        top:130,
         marginStart:25,
         color:color.white,
         elevation:7,
@@ -149,7 +159,7 @@ const styles = StyleSheet.create({
         borderRadius:30,
         height:50,
         width:'40%',
-        top:390,
+        top:220,
         alignSelf:'center',
         alignItems:'center',
         zIndex:7
@@ -170,13 +180,13 @@ const styles = StyleSheet.create({
     },
     icon_compartilhar:{
         position:'absolute',
-        top:400,
+        top:230,
         end:50,
         zIndex:7
     },
     icon_chat:{
         position:'absolute',
-        top:400,
+        top:230,
         start:50,
         zIndex:7
     },
@@ -184,7 +194,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         alignSelf:'center',
         fontSize:20,
-        top:460,
+        top:290,
         color:color.white,
         fontWeight:'bold',
         zIndex:7
@@ -193,7 +203,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         alignSelf:'center',
         fontSize:14,
-        top:490,
+        top:320,
         color:color.cinza_light,
         fontWeight:'normal',
         zIndex:7
@@ -202,7 +212,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         alignSelf:'flex-start',
         fontSize:20,
-        top:460,
+        top:290,
         start:48,
         color:color.white,
         fontWeight:'bold',
@@ -212,7 +222,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         alignSelf:'flex-start',
         fontSize:14,
-        top:490,
+        top:320,
         start:35,
         color:color.cinza_light,
         fontWeight:'normal',
@@ -222,7 +232,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         alignSelf:'flex-start',
         fontSize:20,
-        top:460,
+        top:290,
         end:48,
         color:color.white,
         fontWeight:'bold',
@@ -232,7 +242,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         alignSelf:'flex-start',
         fontSize:14,
-        top:490,
+        top:320,
         end:35,
         color:color.cinza_light,
         fontWeight:'normal',

@@ -26,16 +26,21 @@ const BuscarView = ({navigation}) => {
             <Image source={back} style={styles.image_fundo} blurRadius={2} />
             <LinearGradient colors={['transparent', 'black']} style={styles.image_fundo}/>
 
-            <TouchableOpacity>
+            <TouchableOpacity
+                onPress={()=>{navigation.navigate("FilterLocal")}}
+            >
                 <Ionicons name="location-outline" size={25} style={styles.icon_localizacao_distancia} color={color.white}/>
                 <Text  style={styles.text_localizacao_distancia} > 100 km  </Text>
 
             </TouchableOpacity>
             <TouchableOpacity style={styles.btn_add_float}
+                onPress={()=>{navigation.navigate("AddCard")}}
                 >
             <Ionicons name={'add-outline'} size={35} color={color.black} />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.fundo_localizacao}>
+            <TouchableOpacity style={styles.fundo_localizacao}
+                onPress={()=>{navigation.navigate("Localizacao")}}
+            >
                 <Ionicons name="location-outline" size={25} style={styles.icon_localizacao}/>
                 <Text style={styles.text_localizacao} numberOfLines={1}>
                     Av. Franz João Hassis, 502 
