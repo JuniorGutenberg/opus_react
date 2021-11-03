@@ -16,7 +16,9 @@ const Tab = createBottomTabNavigator()
 
 
 export default function Navigation(){
-    return <Tab.Navigator screenOptions={({route}) => (
+    return <Tab.Navigator
+    initialRouteName="Buscar"
+    screenOptions={({route}) => (
                 {headerShown:false,
                     tabBarStyle:styles.fundo_navigation,
                     tabBarIcon: ({color,size}) =>{
