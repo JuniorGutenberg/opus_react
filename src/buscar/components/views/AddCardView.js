@@ -17,9 +17,6 @@ const AddCardView = ({navigation}) => {
     const [valueCurrency, setValueCurrency] = useState(0)
     const [valorFormatado, setValorFormatado] = useState("")
 
-
-
-
     return <ScrollView 
             style={styles.container_scroll_add}>
                
@@ -114,7 +111,7 @@ const AddCardView = ({navigation}) => {
                         delimiter={"."}
                         separator={","}
                         precision={2}
-                        placeholder={"R$ 50,00"}
+                        placeholder={"R$ 50,00"} 
                         placeholderTextColor="white"
                         maxValue={1000000000}
                         >
